@@ -11,3 +11,5 @@ const clrCngClick = () => {
   colorVal.textContent = bgColor}
 
 changeBtn.addEventListener('click', clrCngClick);
+
+// setInterval(clrCngClick, 1)
