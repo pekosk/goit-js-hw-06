@@ -11,8 +11,8 @@ if (emailInput.value == '' || passwordInput.value == '') {
 } 
 else {
   const user = {
-    email: emailInput.value,
-    password: passwordInput.value,
+    email: formLg.elements.email.value,
+    password: formLg.elements.password.value,
     }
     console.log(user);
   event.currentTarget.reset();
