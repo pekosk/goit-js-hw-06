@@ -1,13 +1,18 @@
 const btnMns = document.querySelector('button[data-action="decrement"]');
 const btnPls = document.querySelector('button[data-action="increment"]');
 const counterValue = document.querySelector('#value');
+let numberEl = 0;
 
 const mnsClick = () => {
-  counterValue.textContent -= 1;
+  numberEl -= 1;
+
+  counterValue.textContent = numberEl;
 };
 
 const plsClick = () => {
-  counterValue.textContent =  Number(counterValue.textContent) + 1;
+  numberEl += 1;
+
+  counterValue.textContent = numberEl;
 };
 
 btnMns.addEventListener('click', mnsClick);
